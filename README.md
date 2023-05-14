@@ -1,7 +1,9 @@
 # theGymnWork
 Git is version control tool and Github is cloud based platform to host document and enable collaboration al are built on git. 
 
-## squence of commands used
+## Bundle 1
+
+### squence of commands used for exercise 1
 
 
 
