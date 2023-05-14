@@ -305,8 +305,8 @@ To push the current branch and set the remote as upstream, use
 
 To have this happen automatically for branches without a tracking
 upstream, see 'push.autoSetupRemote' in 'git help config'.
-
-
+```
+```shell
 Admin@Aluxer MINGW64 /f/theGymnWork (dev)
 $ git push --set-upstream origin dev
 Enumerating objects: 5, done.
@@ -321,7 +321,8 @@ remote:      https://github.com/MugemaneBertin2001/theGymnWork/pull/new/dev
 remote:
 To https://github.com/MugemaneBertin2001/theGymnWork.git
  * [new branch]      dev -> dev
-branch 'dev' set up to track 'origin/dev'.```
+branch 'dev' set up to track 'origin/dev'.
+```
 
 ```shell
 Admin@Aluxer MINGW64 /f/theGymnWork (dev)
