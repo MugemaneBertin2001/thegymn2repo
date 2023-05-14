@@ -264,7 +264,8 @@ Untracked files:
         home.html
 
 nothing added to commit but untracked files present (use "git add" to track)
-The stash entry is kept in case you need it again.```
+The stash entry is kept in case you need it again.
+```
 
 ```shell
 Admin@Aluxer MINGW64 /f/theGymnWork (dev)
@@ -284,7 +285,8 @@ The stash entry is kept in case you need it again.
 ```
 ```shell
 Admin@Aluxer MINGW64 /f/theGymnWork (dev)
-$ git add .```
+$ git add .
+```
 
 ```shell
 Admin@Aluxer MINGW64 /f/theGymnWork (dev)
