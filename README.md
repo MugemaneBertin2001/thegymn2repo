@@ -17,22 +17,26 @@ remote: Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
 ```
 ```shell
 Admin@Aluxer MINGW64 /f
-$ cd theGymnWork/```
+$ cd theGymnWork/
+```
 
 ```shell
 Admin@Aluxer MINGW64 /f/theGymnWork (main)
-$ touch sampleFile.html```
+$ touch sampleFile.html
+```
 
 ```shell
 Admin@Aluxer MINGW64 /f/theGymnWork (main)
-$ git add .```
+$ git add .
+```
 
 ```shell
 Admin@Aluxer MINGW64 /f/theGymnWork (main)
 $ git commit -m "Created a file"
 [main bbdea25] Created a file
  1 file changed, 0 insertions(+), 0 deletions(-)
- create mode 100644 sampleFile.html```
+ create mode 100644 sampleFile.html
+ ```
 
 ```shell
 Admin@Aluxer MINGW64 /f/theGymnWork (main)
@@ -44,10 +48,12 @@ Compressing objects: 100% (2/2), done.
 Writing objects: 100% (3/3), 280 bytes | 140.00 KiB/s, done.
 Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
 To https://github.com/MugemaneBertin2001/theGymnWork.git
-   b95e24d..bbdea25  main -> main```
+   b95e24d..bbdea25  main -> main
+```
 ```shell
 Admin@Aluxer MINGW64 /f/theGymnWork (main)
-$ vi sampleFile.html```
+$ vi sampleFile.html
+```
 
 ```shell
 Admin@Aluxer MINGW64 /f/theGymnWork (main)
@@ -58,7 +64,8 @@ warning: in the working copy of 'sampleFile.html', LF will be replaced by CRLF t
 Admin@Aluxer MINGW64 /f/theGymnWork (main)
 $ git commit -m "editted file"
 [main 8dca45b] editted file
- 1 file changed, 13 insertions(+)```
+ 1 file changed, 13 insertions(+)
+ ```
 
 ```shell
 Admin@Aluxer MINGW64 /f/theGymnWork (main)
