@@ -892,8 +892,6 @@ Date:   Thu May 18 17:51:24 2023 +0200
 commit 505024b6e8342c9b95c04d6cb2455984c32bc69f
 :
 ```
-## Bundle 3
-
 ### squence of commands used for exercise 2
 
 ```shell
