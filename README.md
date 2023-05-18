@@ -470,4 +470,4 @@ To https://github.com/MugemaneBertin2001/theGymnWork.git
 Admin@Aluxer MINGW64 /f/theGymnWork (main)
 ```
 
-### squence of commands used for exercise 1
+### squence of commands used for exercise 2
