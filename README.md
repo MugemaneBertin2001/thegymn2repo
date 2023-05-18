@@ -1238,7 +1238,3 @@ branch 'ft/faq-page' set up to track 'origin/ft/faq-page'.
 ```shell
 Admin@Aluxer MINGW64 /f/theGymnWork (ft/faq-page)
 ```
-## Bundle 2
-
-### squence of commands used for exercise 2
->>>>>>> ft/faq-page
