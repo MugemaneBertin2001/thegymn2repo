@@ -628,8 +628,12 @@ To push the current branch and set the remote as upstream, use
 
 To have this happen automatically for branches without a tracking
 upstream, see 'push.autoSetupRemote' in 'git help config'.
+<<<<<<< HEAD
+=======
 
-
+>>>>>>> ft/faq-page
+```
+```shell
 Admin@Aluxer MINGW64 /f/theGymnWork (ft/team-page)
 $ git push --set-upstream origin ft/team-page
 Enumerating objects: 4, done.
@@ -891,5 +895,350 @@ Date:   Thu May 18 17:51:24 2023 +0200
 
 commit 505024b6e8342c9b95c04d6cb2455984c32bc69f
 :
+<<<<<<< HEAD
 ```
 ### squence of commands used for exercise 2
+
+```shell
+Admin@Aluxer MINGW64 /f/theGymnWork (ft/faq-page)
+$ git branch ft/home-page-redesign ft/faq-page
+```
+```shell
+Admin@Aluxer MINGW64 /f/theGymnWork (ft/faq-page)
+$ git checkout main
+error: Your local changes to the following files would be overwritten by checkout:
+        README.md
+Please commit your changes or stash them before you switch branches.
+Aborting
+```
+```shell
+Admin@Aluxer MINGW64 /f/theGymnWork (ft/faq-page)
+$ git add .
+```
+```shell
+Admin@Aluxer MINGW64 /f/theGymnWork (ft/faq-page)
+$ git commit -m "ordering README.md
+> "
+[ft/faq-page bfb942b] ordering README.md
+ 1 file changed, 198 insertions(+), 11 deletions(-)
+```
+```shell
+Admin@Aluxer MINGW64 /f/theGymnWork (ft/faq-page)
+$ git push
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 1.56 KiB | 798.00 KiB/s, done.
+Total 3 (delta 2), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (2/2), completed with 2 local objects.
+To https://github.com/MugemaneBertin2001/theGymnWork.git
+   2cb2ffb..bfb942b  ft/faq-page -> ft/faq-page
+```
+```shell
+Admin@Aluxer MINGW64 /f/theGymnWork (ft/faq-page)
+$ git checkout main
+Switched to branch 'main'
+Your branch is up to date with 'origin/main'.
+```
+```shell
+Admin@Aluxer MINGW64 /f/theGymnWork (main)
+$ echo "some changes on main branch "> changes.html
+```
+```shell
+Admin@Aluxer MINGW64 /f/theGymnWork (main)
+$ git add .
+warning: in the working copy of 'changes.html', LF will be replaced by CRLF the next time Git touches it
+```
+```shell
+Admin@Aluxer MINGW64 /f/theGymnWork (main)
+$ git commit -m "some changes on main branch"
+[main 5a9ec38] some changes on main branch
+ 1 file changed, 1 insertion(+)
+ create mode 100644 changes.html
+```
+```shell
+Admin@Aluxer MINGW64 /f/theGymnWork (main)
+$ git push
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 304 bytes | 304.00 KiB/s, done.
+Total 3 (delta 1), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/MugemaneBertin2001/theGymnWork.git
+   fd0e046..5a9ec38  main -> main
+```
+```shell
+Admin@Aluxer MINGW64 /f/theGymnWork (main)
+$ git checkout ft/home-page-redesign
+Switched to branch 'ft/home-page-redesign'
+```
+```shell
+Admin@Aluxer MINGW64 /f/theGymnWork (ft/home-page-redesign)
+$ git rebase main
+Successfully rebased and updated refs/heads/ft/home-page-redesign.
+```
+```shell
+Admin@Aluxer MINGW64 /f/theGymnWork (ft/home-page-redesign)
+$ git add .
+```
+```shell
+Admin@Aluxer MINGW64 /f/theGymnWork (ft/home-page-redesign)
+$ git commit -m "commit after rebase "
+On branch ft/home-page-redesign
+nothing to commit, working tree clean
+```
+```shell
+Admin@Aluxer MINGW64 /f/theGymnWork (ft/home-page-redesign)
+$ git push
+fatal: The current branch ft/home-page-redesign has no upstream branch.
+To push the current branch and set the remote as upstream, use
+
+    git push --set-upstream origin ft/home-page-redesign
+=======
+
+```
+```shell
+Admin@Aluxer MINGW64 ~
+$ cd f:
+```
+```shell
+Admin@Aluxer MINGW64 /f
+$ cd theGymnWork/
+```
+```shell
+Admin@Aluxer MINGW64 /f/theGymnWork (ft/team-page)
+$ git cherry-pick 0b545502f4adfd85cb63ee035dd10957a1752835
+The previous cherry-pick is now empty, possibly due to conflict resolution.
+If you wish to commit it anyway, use:
+
+    git commit --allow-empty
+
+Otherwise, please use 'git cherry-pick --skip'
+On branch ft/team-page
+Your branch is up to date with 'origin/ft/team-page'.
+
+You are currently cherry-picking commit 0b54550.
+  (all conflicts fixed: run "git cherry-pick --continue")
+  (use "git cherry-pick --skip" to skip this patch)
+  (use "git cherry-pick --abort" to cancel the cherry-pick operation)
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   README.md
+
+no changes added to commit (use "git add" and/or "git commit -a")
+```
+```shell
+Admin@Aluxer MINGW64 /f/theGymnWork (ft/team-page|CHERRY-PICKING)
+$ git checkout ft/contact-page
+Switched to branch 'ft/contact-page'
+warning: cancelling a cherry picking in progress
+M       README.md
+```
+```shell
+Admin@Aluxer MINGW64 /f/theGymnWork (ft/contact-page)
+$ git cherry-pick 0b545502f4adfd85cb63ee035dd10957a1752835
+[ft/contact-page 16c9f51] added team.html
+ Date: Thu May 18 20:00:41 2023 +0200
+ 1 file changed, 12 insertions(+)
+ create mode 100644 team.html
+```
+```shell
+Admin@Aluxer MINGW64 /f/theGymnWork (ft/contact-page)
+$ vi contact.html
+```
+```shell
+Admin@Aluxer MINGW64 /f/theGymnWork (ft/contact-page)
+$ git add  .
+warning: in the working copy of 'contact.html', LF will be replaced by CRLF the next time Git touches it
+```
+```shell
+Admin@Aluxer MINGW64 /f/theGymnWork (ft/contact-page)
+$ git commit -m "changes on contacts page"
+[ft/contact-page 5803734] changes on contacts page
+ 2 files changed, 318 insertions(+)
+ create mode 100644 contact.html
+```
+```shell
+Admin@Aluxer MINGW64 /f/theGymnWork (ft/contact-page)
+$ git push
+fatal: The current branch ft/contact-page has no upstream branch.
+To push the current branch and set the remote as upstream, use
+
+    git push --set-upstream origin ft/contact-page
+
+To have this happen automatically for branches without a tracking
+upstream, see 'push.autoSetupRemote' in 'git help config'.
+```
+```shell
+
+Admin@Aluxer MINGW64 /f/theGymnWork (ft/contact-page)
+$ git push --set-upstream origin ft/contact-page
+Enumerating objects: 9, done.
+Counting objects: 100% (9/9), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (7/7), done.
+Writing objects: 100% (7/7), 1.81 KiB | 464.00 KiB/s, done.
+Total 7 (delta 2), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (2/2), completed with 2 local objects.
+remote:
+remote: Create a pull request for 'ft/contact-page' on GitHub by visiting:
+remote:      https://github.com/MugemaneBertin2001/theGymnWork/pull/new/ft/contact-page
+remote:
+To https://github.com/MugemaneBertin2001/theGymnWork.git
+ * [new branch]      ft/contact-page -> ft/contact-page
+branch 'ft/contact-page' set up to track 'origin/ft/contact-page'.
+```
+```shell
+Admin@Aluxer MINGW64 /f/theGymnWork (ft/contact-page)
+$ git branch ft/faq-page ft/contact-page
+```
+```shell
+Admin@Aluxer MINGW64 /f/theGymnWork (ft/contact-page)
+$ git checkout ft/faq-page
+Switched to branch 'ft/faq-page'
+```
+```shell
+Admin@Aluxer MINGW64 /f/theGymnWork (ft/faq-page)
+$ vi faq.html
+```
+```shell
+Admin@Aluxer MINGW64 /f/theGymnWork (ft/faq-page)
+$ git add faq.html
+warning: in the working copy of 'faq.html', LF will be replaced by CRLF the next time Git touches it
+```
+```shell
+Admin@Aluxer MINGW64 /f/theGymnWork (ft/faq-page)
+$ git commit -m "Add faq.html and make changes"
+[ft/faq-page b2a33fa] Add faq.html and make changes
+ 1 file changed, 15 insertions(+)
+ create mode 100644 faq.html
+```
+```shell
+Admin@Aluxer MINGW64 /f/theGymnWork (ft/faq-page)
+$ git push origin ft/faq-page
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 438 bytes | 438.00 KiB/s, done.
+Total 3 (delta 1), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+remote:
+remote: Create a pull request for 'ft/faq-page' on GitHub by visiting:
+remote:      https://github.com/MugemaneBertin2001/theGymnWork/pull/new/ft/faq-page
+remote:
+To https://github.com/MugemaneBertin2001/theGymnWork.git
+ * [new branch]      ft/faq-page -> ft/faq-page
+```
+```shell
+Admin@Aluxer MINGW64 /f/theGymnWork (ft/faq-page)
+$ git revert 0b545502f4adfd85cb63ee035dd10957a1752835
+[ft/faq-page 2cb2ffb] Revert "added team.html" Using git revert, revert the changes of the last commit of the ft/team-page branch. (use the commit hash you copied earlier) This reverts commit 0b545502f4adfd85cb63ee035dd10957a1752835.
+ 1 file changed, 12 deletions(-)
+ delete mode 100644 team.html
+```
+```shell
+Admin@Aluxer MINGW64 /f/theGymnWork (ft/faq-page)
+$ git push
+fatal: The current branch ft/faq-page has no upstream branch.
+To push the current branch and set the remote as upstream, use
+
+    git push --set-upstream origin ft/faq-page
+>>>>>>> ft/faq-page
+
+To have this happen automatically for branches without a tracking
+upstream, see 'push.autoSetupRemote' in 'git help config'.
+
+```
+```shell
+<<<<<<< HEAD
+Admin@Aluxer MINGW64 /f/theGymnWork (ft/home-page-redesign)
+$ git push --set-upstream origin ft/home-page-redesign
+Enumerating objects: 14, done.
+Counting objects: 100% (14/14), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (12/12), done.
+Writing objects: 100% (12/12), 2.51 KiB | 642.00 KiB/s, done.
+Total 12 (delta 4), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (4/4), completed with 2 local objects.
+remote:
+remote: Create a pull request for 'ft/home-page-redesign' on GitHub by visiting:
+remote:      https://github.com/MugemaneBertin2001/theGymnWork/pull/new/ft/home-page-redesign
+remote:
+To https://github.com/MugemaneBertin2001/theGymnWork.git
+ * [new branch]      ft/home-page-redesign -> ft/home-page-redesign
+branch 'ft/home-page-redesign' set up to track 'origin/ft/home-page-redesign'.
+```
+```shell
+Admin@Aluxer MINGW64 /f/theGymnWork (ft/home-page-redesign)
+$ git rebase --continue
+fatal: No rebase in progress?
+```
+```shell
+Admin@Aluxer MINGW64 /f/theGymnWork (ft/home-page-redesign)
+$ git rebase main
+Current branch ft/home-page-redesign is up to date.
+```
+```shell
+Admin@Aluxer MINGW64 /f/theGymnWork (ft/home-page-redesign)
+$ ls
+README.md   changes.html  faq.html   sampleFile.html
+about.html  contact.html  home.html  service.html
+```
+```shell
+Admin@Aluxer MINGW64 /f/theGymnWork (ft/home-page-redesign)
+$ vi home.html
+```
+```shell
+Admin@Aluxer MINGW64 /f/theGymnWork (ft/home-page-redesign)
+$ git add .
+```
+```shell
+Admin@Aluxer MINGW64 /f/theGymnWork (ft/home-page-redesign)
+$ git commit -m "some changes on home page"
+[ft/home-page-redesign 4fa1b71] some changes on home page
+ 1 file changed, 1 insertion(+)
+```
+```shell
+Admin@Aluxer MINGW64 /f/theGymnWork (ft/home-page-redesign)
+$ git push
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 301 bytes | 150.00 KiB/s, done.
+Total 3 (delta 1), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/MugemaneBertin2001/theGymnWork.git
+   d2508f1..4fa1b71  ft/home-page-redesign -> ft/home-page-redesign
+```
+```shell
+Admin@Aluxer MINGW64 /f/theGymnWork (ft/home-page-redesign)
+```
+=======
+Admin@Aluxer MINGW64 /f/theGymnWork (ft/faq-page)
+```shell
+$  git push --set-upstream origin ft/faq-page
+Enumerating objects: 3, done.
+Counting objects: 100% (3/3), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (2/2), 336 bytes | 336.00 KiB/s, done.
+Total 2 (delta 1), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/MugemaneBertin2001/theGymnWork.git
+   b2a33fa..2cb2ffb  ft/faq-page -> ft/faq-page
+branch 'ft/faq-page' set up to track 'origin/ft/faq-page'.
+```
+```shell
+Admin@Aluxer MINGW64 /f/theGymnWork (ft/faq-page)
+```
+## Bundle 2
+
+### squence of commands used for exercise 2
+>>>>>>> ft/faq-page
