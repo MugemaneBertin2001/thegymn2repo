@@ -628,10 +628,6 @@ To push the current branch and set the remote as upstream, use
 
 To have this happen automatically for branches without a tracking
 upstream, see 'push.autoSetupRemote' in 'git help config'.
-<<<<<<< HEAD
-=======
-
->>>>>>> ft/faq-page
 ```
 ```shell
 Admin@Aluxer MINGW64 /f/theGymnWork (ft/team-page)
@@ -1084,4 +1080,114 @@ branch 'ft/faq-page' set up to track 'origin/ft/faq-page'.
 ```shell
 Admin@Aluxer MINGW64 /f/theGymnWork (ft/faq-page)
 ```
-## Bundle 2
+
+# Bundle 4
+
+### squence of commands used for exercise 2
+```shell
+Admin@Aluxer MINGW64 /f/theGymnWork (main)
+$ code .
+```
+```shell
+Admin@Aluxer MINGW64 /f/theGymnWork (main)
+$ git checkout main
+Already on 'main'
+M       README.md
+Your branch is behind 'origin/main' by 1 commit, and can be fast-forwarded.
+  (use "git pull" to update your local branch)
+```
+```shell
+Admin@Aluxer MINGW64 /f/theGymnWork (main)
+$ git remote add git-copy https://github.com/MugemaneBertin2001/thegymn2repo.git
+```
+```shell
+Admin@Aluxer MINGW64 /f/theGymnWork (main)
+$ vi home.html
+```
+```shell
+Admin@Aluxer MINGW64 /f/theGymnWork (main)
+$ git add .
+```
+```shell
+Admin@Aluxer MINGW64 /f/theGymnWork (main)
+$ git commit -m "The changes for 4 bundle"
+[main ae2915e] The changes for 4 bundle
+ 2 files changed, 1 insertion(+), 176 deletions(-)
+```
+```shell
+Admin@Aluxer MINGW64 /f/theGymnWork (main)
+$ git push origin main
+To https://github.com/MugemaneBertin2001/theGymnWork.git
+ ! [rejected]        main -> main (non-fast-forward)
+error: failed to push some refs to 'https://github.com/MugemaneBertin2001/theGymnWork.git'
+hint: Updates were rejected because the tip of your current branch is behind
+hint: its remote counterpart. Integrate the remote changes (e.g.
+hint: 'git pull ...') before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+```
+```shell
+Admin@Aluxer MINGW64 /f/theGymnWork (main)
+$ git push origin main
+To https://github.com/MugemaneBertin2001/theGymnWork.git
+ ! [rejected]        main -> main (non-fast-forward)
+error: failed to push some refs to 'https://github.com/MugemaneBertin2001/theGymnWork.git'
+hint: Updates were rejected because the tip of your current branch is behind
+hint: its remote counterpart. Integrate the remote changes (e.g.
+hint: 'git pull ...') before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+```
+```shell
+Admin@Aluxer MINGW64 /f/theGymnWork (main)
+$ git pull
+Auto-merging README.md
+CONFLICT (content): Merge conflict in README.md
+Automatic merge failed; fix conflicts and then commit the result.
+```
+```shell
+Admin@Aluxer MINGW64 /f/theGymnWork (main|MERGING)
+$ git pull
+Already up to date.
+```
+```shell
+Admin@Aluxer MINGW64 /f/theGymnWork (main)
+$ git push
+Everything up-to-date
+```
+```shell
+Admin@Aluxer MINGW64 /f/theGymnWork (main)
+$ git push
+
+```
+```shell
+
+Admin@Aluxer MINGW64 /f/theGymnWork (main)
+$ git push origin main
+Everything up-to-date
+```
+```shell
+Admin@Aluxer MINGW64 /f/theGymnWork (main)
+$ git push git-copy ^[[200~git push git-copy <branch_name>
+bash: syntax error near unexpected token `newline'
+```
+```shell
+Admin@Aluxer MINGW64 /f/theGymnWork (main)
+$ git push git-copy mani
+error: src refspec mani does not match any
+error: failed to push some refs to 'https://github.com/MugemaneBertin2001/thegymn2repo.git'
+```
+```shell
+Admin@Aluxer MINGW64 /f/theGymnWork (main)
+$ git push git-copy main
+Enumerating objects: 94, done.
+Counting objects: 100% (94/94), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (88/88), done.
+Writing objects: 100% (94/94), 16.59 KiB | 809.00 KiB/s, done.
+Total 94 (delta 43), reused 3 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (43/43), done.
+To https://github.com/MugemaneBertin2001/thegymn2repo.git
+ * [new branch]      main -> main
+```
+```shell
+Admin@Aluxer MINGW64 /f/theGymnWork (main)
+```
