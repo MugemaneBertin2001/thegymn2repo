@@ -1066,3 +1066,22 @@ To https://github.com/MugemaneBertin2001/theGymnWork.git
 ```shell
 Admin@Aluxer MINGW64 /f/theGymnWork (ft/home-page-redesign)
 ```
+=======
+Admin@Aluxer MINGW64 /f/theGymnWork (ft/faq-page)
+```shell
+$  git push --set-upstream origin ft/faq-page
+Enumerating objects: 3, done.
+Counting objects: 100% (3/3), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (2/2), 336 bytes | 336.00 KiB/s, done.
+Total 2 (delta 1), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/MugemaneBertin2001/theGymnWork.git
+   b2a33fa..2cb2ffb  ft/faq-page -> ft/faq-page
+branch 'ft/faq-page' set up to track 'origin/ft/faq-page'.
+```
+```shell
+Admin@Aluxer MINGW64 /f/theGymnWork (ft/faq-page)
+```
+## Bundle 2
